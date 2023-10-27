@@ -1,0 +1,83 @@
+@import "../../App.scss";
+
+.developer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  color: hsl(0, 15%, 94%); 
+  background-color: $clr-orange;
+}
+
+.developer {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  font-weight: 500;
+}
+
+.developer img {
+  width: 100px; 
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.developer p {
+  margin-bottom: 10px;
+}
+
+.meet-team {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;  
+}
+
+.meet-team h2 {
+  font-size: 1.5em;
+  color: #ffff;
+}
+
+.developer a {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+/* Styling for Facebook icon */
+.developer .facebook-icon {
+  color: #4267B2; 
+}
+
+/* Styling for Instagram icon */
+.developer .instagram-icon {
+  color: #e4405f; 
+}
+
+/* Styling for GitHub icon */
+.developer .github-icon {
+  color: black; 
+}
+
+/* for responsiveness char */
+
+@media (max-width: 768px) {
+  .developer-info {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+  .developer {
+    margin-bottom: 10px;
+  }
+  .developer img {
+    width: 80px; /* Adjust the image size for smaller screens */
+  }
+  .meet-team {
+    margin-top: 10px;
+  }
+  .meet-team h2 {
+    font-size: 1.2em; /* Adjust the font size for smaller screens */
+  }
+  .developer a {
+    font-size: 18px; /* Adjust the font size for smaller screens */
+  }
+}

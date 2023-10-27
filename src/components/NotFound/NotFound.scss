@@ -1,0 +1,58 @@
+@import "../../App.scss";
+
+.not-found {
+  display: flex;
+  align-items: center;
+  background-color: $clr-whitesmoke; 
+
+  .container {
+    text-align: center;
+
+    .error-message {
+      font-size: 24px;
+      color: $clr-dark-orange;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .emoji {
+      font-size: 24px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .message {
+      font-size: 16px;
+      color: $clr-dark-gray;
+      margin-bottom: 24px; 
+    }
+
+    .suggestions {
+      font-size: 16px;
+      color: $clr-dark-gray;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+
+        li {
+          margin-bottom: 8px;
+          &::before {
+            content: "•";
+            color: $clr-green;
+            font-size: 18px;
+            margin-right: 8px; 
+          }
+        }
+      }
+    }
+
+    .happy-cooking {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: $clr-green; 
+    }
+  }
+}
