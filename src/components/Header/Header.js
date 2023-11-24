@@ -6,13 +6,13 @@ import SearchForm from "./SearchForm";
 const Header = () => {
   return (
     <header className='header'>
-      <Navbar />
+      <Navbar /> {/* Render the Navbar component. */} 
       <div className='header-content flex align-center justify-center flex-column text-center'>
-        <SearchForm />
+        <SearchForm /> {/*Render the SearchForm component. */}
         <h1 className='text-white header-title ls-2'>Craving of Something?</h1>
       </div>
     </header>
   )
 }
 
-export default Header
+export default Header;

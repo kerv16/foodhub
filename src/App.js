@@ -7,13 +7,16 @@ import Sidebar from "./components/Sidebar/Sidebar";
 function App() {
   return (
     <Router>
+      {/* Render the header component */}
       <Header />
+      {/* Render the sidebar component */}
       <Sidebar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/meal/:id" element={<MealDetails />} />
-        <Route path="/meal/category/:name" element={<Category />} />
-        <Route path="*" element={<Error />} />
+        {/* Define the routes for different pages */}
+        <Route path="/" element={<Home />} /> {/* Route for the home page */}
+        <Route path="/meal/:id" element={<MealDetails />} /> {/* Route for meal details page */}
+        <Route path="/meal/category/:name" element={<Category />} /> {/* Route for category page */}
+        <Route path="*" element={<Error />} /> {/* Route for error page when no matching route is found */}
       </Routes>
     </Router>
   );

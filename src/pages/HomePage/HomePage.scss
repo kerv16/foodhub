@@ -5,37 +5,35 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2px;
   color: hsl(0, 15%, 94%); 
   background-color: $clr-orange;
 }
 
 .developer {
   text-align: center;
-  margin-bottom: 20px;
-  padding-top: 5px;
-  font-weight: 500;
+  padding: 10px; /* Add padding for better spacing */
 }
 
 .developer img {
-  width: 100px; 
+  width: 100px;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .developer p {
-  margin-bottom: 10px;
+  margin-bottom: 5px; 
+  font-weight: 700;
 }
 
 .meet-team {
   text-align: center;
-  margin-top: 20px;
   width: 100%;  
 }
 
 .meet-team h2 {
   font-size: 1.5em;
-  color: #ffff;
+  color: #fff;
 }
 
 .developer a {
@@ -43,41 +41,42 @@
   margin: 0 5px;
 }
 
-/* Styling for Facebook icon */
-.developer .facebook-icon {
-  color: #4267B2; 
+/* Styling for social media icons */
+.developer .social-icon {
+  font-size: 24px; /* Adjust the font size for social media icons */
+  margin-top: 5px; /* Add margin to separate names and social media icons */
 }
 
-/* Styling for Instagram icon */
-.developer .instagram-icon {
-  color: #e4405f; 
-}
+/* Specific styling for each social media icon */
+.developer .facebook-icon { color: #4267B2; }
+.developer .instagram-icon { color: #e4405f; }
+.developer .github-icon { color: $clr-black; }
+.developer .xtwitter-icon { color: $clr-black; }
+.developer .linkedin-icon { color: #4267B2; }
 
-/* Styling for GitHub icon */
-.developer .github-icon {
-  color: black; 
-}
-
-/* for responsiveness char */
-
+/* Responsive design */
 @media (max-width: 768px) {
   .developer-info {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column;
     align-items: center;
   }
   .developer {
     margin-bottom: 10px;
   }
   .developer img {
-    width: 80px; /* Adjust the image size for smaller screens */
+    width: 75px;
   }
   .meet-team {
     margin-top: 10px;
   }
   .meet-team h2 {
-    font-size: 1.2em; /* Adjust the font size for smaller screens */
+    font-size: 1.2em;
   }
   .developer a {
-    font-size: 18px; /* Adjust the font size for smaller screens */
+    font-size: 18px;
+  }
+  .developer .social-icon {
+    font-size: 20px; /* Adjust the font size for social media icons in smaller screens */
+    margin-top: 3px; /* Adjust margin for smaller screens */
   }
 }

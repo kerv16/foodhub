@@ -5,9 +5,11 @@ import Loader from "../../components/Loader/Loader";
 import CategoryList from "../../components/Category/CategoryList";
 import NotFound from "../../components/NotFound/NotFound";
 import MealList from "../../components/Meal/MealList";
-import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { RiTwitterXLine } from "react-icons/ri";
 
-// Import images
+
+// Dev Images 
 import developer1Image from '../../assets/images/kervin.jpg';
 import developer2Image from '../../assets/images/johnny.jpg';
 import developer3Image from '../../assets/images/russel.jpg';
@@ -42,9 +44,15 @@ const HomePage = () => {
 
       {/* Developer information */}
       <footer className="developer-info">
+      <div className="meet-team">
+        <h2> IT 114 Section FN1 Team Doraemon</h2>
+      </div>
         <div className="developer">
           <img src={developer1Image} alt="Developer 1" />
           <p>Kervin Niño Tulang</p>
+          <a href="https://www.linkedin.com/in/kervin-ni%C3%B1o-tulang-2597b5297/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+            <FaLinkedin />
+          </a>
           <a href="https://www.facebook.com/profile.php?id=100008564107348" target="_blank" rel="noopener noreferrer" className="facebook-icon">
             <FaFacebook />
           </a>
@@ -54,10 +62,16 @@ const HomePage = () => {
           <a href="https://github.com/your-github-1" target="_blank" rel="noopener noreferrer" className="github-icon">
             <FaGithub />
           </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="xtwitter-icon">
+          <RiTwitterXLine />
+          </a>
         </div>
         <div className="developer">
           <img src={developer2Image} alt="Developer 2" />
           <p>John Carlo Elustre</p>
+          <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+            <FaLinkedin />
+          </a>
           <a href="https://www.facebook.com/johhny.luster" target="_blank" rel="noopener noreferrer" className="facebook-icon">
             <FaFacebook />
           </a>
@@ -67,10 +81,16 @@ const HomePage = () => {
           <a href="https://github.com/your-github-2" target="_blank" rel="noopener noreferrer" className="github-icon">
             <FaGithub />
           </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="xtwitter-icon">
+          <RiTwitterXLine />
+          </a>
         </div>
         <div className="developer">
           <img src={developer3Image} alt="Developer 3" />
           <p>Russel Zamora</p>
+          <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+            <FaLinkedin />
+          </a>
           <a href="https://www.facebook.com/neroanjero123" target="_blank" rel="noopener noreferrer" className="facebook-icon">
             <FaFacebook />
           </a>
@@ -80,10 +100,10 @@ const HomePage = () => {
           <a href="https://github.com/your-github-3" target="_blank" rel="noopener noreferrer" className="github-icon">
             <FaGithub />
           </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="xtwitter-icon">
+          <RiTwitterXLine />
+          </a>
         </div>
-        <div className="meet-team">
-        <h2> IT 114 Section FN1 Team Doraemon</h2>
-      </div>
       </footer>
       
     </main>
